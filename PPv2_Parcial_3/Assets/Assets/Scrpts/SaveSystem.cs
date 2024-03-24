@@ -5,14 +5,7 @@ using System.IO;
 
 public class SaveSystem : MonoBehaviour
 {
-    /// <summary>
-    /// Instancia estática de la clase SaveSystem para acceder a ella desde otros scripts.
-    /// </summary>
     public static SaveSystem Instance;
-
-    /// <summary>
-    /// Objeto de datos que se puede asignar desde el editor de Unity.
-    /// </summary>
     public GameObject data;
 
     private void Awake()
