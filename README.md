@@ -4,8 +4,9 @@
 - Este repositorio es un compendio de las clases de programación para videojuegos 2
 
  
-# Explicacion-del-fork #
-- Accidentalmente este repositorio y mi tranbajo se guardo en el repositorio de mi compañero Jeshua, se tuvo que crear un Fork para que yo pudiera subir mi proyecto, los scripts y el HUD del juego son diferentes al de mi compañero por lo tanto no hay plagio o copia del trabajo de mi compañero. 
+# Explicacion-del-Nombre Parcial-3 #
+- Accidentalmente este repositorio y mi tranbajo se guardo en el repositorio de mi compañero Jeshua, se tuvo que crear un Fork para que yo pudiera subir mi proyecto, los scripts y el HUD del juego son diferentes al de mi compañero por lo tanto no hay plagio o copia del trabajo de mi compañero. Se creo otro repositorio en el cual se va a trabajar desde ahora para no interferir con el trabajo de mi compañero Jeshua
+  
 
 # Funcionamiento #
 - Cómo en duolingo se presentan preguntas (5 preguntas) 
