@@ -6,7 +6,8 @@ using System.IO;
 public class SaveSystem : MonoBehaviour
 {
     public static SaveSystem Instance;
-    public GameObject data;
+    public Subject data;
+    public SubjectContainer subject;
 
     private void Awake()
     {
@@ -19,6 +20,11 @@ public class SaveSystem : MonoBehaviour
         {
             Instance = this; // Asigna esta instancia como la instancia única
         }
+    }
+    private void Start()
+    {
+        SaveToJSON("LeccionCompleta.json", data);
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
     }
 
     /// <summary>
@@ -39,9 +45,10 @@ public class SaveSystem : MonoBehaviour
                 Debug.Log("JSON String: " + JSONData);
                 string fileName = _fileName + ".json"; // Agrega la extensión ".json" al nombre del archivo
                 string filePath = Path.Combine(Application.dataPath + "/Resources/JSONS/", fileName);
-
                 // Escribe los datos en el archivo
                 File.WriteAllText(filePath, JSONData);
+                Debug.Log("JSON almacenado en la direccion: " + filePath);
+
             }
             else
             {
