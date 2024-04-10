@@ -1,32 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainScript : MonoBehaviour
 {
-    public static MainScript instance;
-    public string SelectedLesson = dummy;
-    // Start is called before the first frame update
-    private void Awake ()
-    {
-        if (instance != null)
-        {
-            return;
-        }
-        else;
-        {
-            instance = this;
-        }
-    }
+        public static MainScript instance;
+        public string selectedLessonValue = "dummy"; // Cambiado el nombre de la variable
 
-    
-    public void SelectedLesson(string lesson)
-    {
-        SelectedLesson = lesson;
-        PlayerPREFS.SetString("SelectedLesson", SelectedLesson);
-    }
-    public void BeginGame()
-    {
-        SceneManager.LoadScene("Lesson"); 
-    }
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                return;
+            }
+            else
+            {
+                instance = this;
+            }
+        }
+
+        public void SetSelectedLesson(string lesson) // Cambiado el nombre de la función
+        {
+            selectedLessonValue = lesson;
+            PlayerPrefs.SetString("SelectedLesson", selectedLessonValue); // Corregido PlayerPREFS a PlayerPrefs
+        }
+
+        public void BeginGame()
+        {
+            SceneManager.LoadScene("Lesson");
+        }
 }
