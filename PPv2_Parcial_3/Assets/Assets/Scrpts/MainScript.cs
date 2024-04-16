@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainScript : MonoBehaviour
 {
         public static MainScript instance;
-        public string selectedLessonValue = "dummy"; // Cambiado el nombre de la variable
+        public string selectedLesson = "dummy"; // Cambiado el nombre de la variable
 
         private void Awake()
         {
@@ -20,14 +20,18 @@ public class MainScript : MonoBehaviour
             }
         }
 
-        public void SetSelectedLesson(string lesson) // Cambiado el nombre de la función
+        public void SetSelectedLesson(string lesson) // Cambiado el nombre de la funciï¿½n
         {
-            selectedLessonValue = lesson;
-            PlayerPrefs.SetString("SelectedLesson", selectedLessonValue); // Corregido PlayerPREFS a PlayerPrefs
+            selectedLesson = lesson;
+            PlayerPrefs.SetString("SelectedLesson", selectedLesson); // Corregido PlayerPREFS a PlayerPrefs
         }
 
         public void BeginGame()
         {
-            SceneManager.LoadScene("Lesson");
+            SceneManager.LoadScene("Leccion 1");
         }
+    public void BeginGame2()
+    {
+        SceneManager.LoadScene("dualipa");
+    }
 }

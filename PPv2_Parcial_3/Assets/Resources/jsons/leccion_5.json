@@ -1,0 +1,66 @@
+{
+  "Lesson": 5,
+  "leccionList": [
+    {
+      "ID": 21,
+      "lessons": "¿Qué es una Light Probe en Unity?",
+      "options": [
+        "Un tipo de dato",
+        "Un componente de Unity",
+        "Una entidad en la escena",
+        "Un archivo de configuración",
+        "Un componente utilizado para calcular la iluminación indirecta"
+      ],
+      "correctAnswer": 4
+    },
+    {
+      "ID": 22,
+      "lessons": "¿Cuál es la función del componente Rigidbody2D en Unity?",
+      "options": [
+        "Controlar la cámara",
+        "Detectar colisiones",
+        "Controlar el movimiento físico en 2D",
+        "Reproducir sonidos",
+        "Crear animaciones"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "ID": 23,
+      "lessons": "¿Qué es el sistema de animación Mecanim en Unity?",
+      "options": [
+        "Un tipo de dato",
+        "Un componente de Unity",
+        "Una entidad en la escena",
+        "Un sistema de animación para controlar personajes y objetos",
+        "Un archivo de configuración"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "ID": 24,
+      "lessons": "¿Qué es un Shader en Unity?",
+      "options": [
+        "Una clase estática",
+        "Una entidad en la escena",
+        "Un componente de Unity para renderizar gráficos 3D",
+        "Un programa que define cómo se renderizan los gráficos",
+        "Un archivo de configuración"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "ID": 25,
+      "lessons": "¿Qué es un componente TrailRenderer en Unity?",
+      "options": [
+        "Un tipo de dato",
+        "Un componente de Unity",
+        "Una entidad en la escena",
+        "Un archivo de configuración",
+        "Un componente para renderizar estelas detrás de GameObjects"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
+h

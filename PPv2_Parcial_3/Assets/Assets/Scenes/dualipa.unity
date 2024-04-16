@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 45388470}
   - component: {fileID: 45388469}
   - component: {fileID: 45388468}
+  - component: {fileID: 45388471}
   - component: {fileID: 45388467}
   m_Layer: 5
   m_Name: Canvas
@@ -229,6 +230,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &45388471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45388466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f55e55be7d147bd945e6b5ccb9c6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedLesson: dummy
 --- !u!1 &262197081
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +446,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1086161677}
     m_Modifications:
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452382452}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -553,6 +595,7 @@ MonoBehaviour:
   StageTitle: {fileID: 597816664}
   LessonStage: {fileID: 1558480093}
   lessonContainer: {fileID: 1143009046}
+  LessonName: leccion_5
   LessonData: {fileID: 0}
 --- !u!1 &538794232
 GameObject:
@@ -611,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Usa las convenciones b\xE1sicas del lenguaje"
+  m_text: Usa el conocimiento aprendido en tus lecciones de programacion basico 1.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4cad9428bbed740f7864e878eda57596, type: 2}
   m_sharedMaterial: {fileID: -8975879112970141270, guid: 4cad9428bbed740f7864e878eda57596, type: 2}
@@ -696,6 +739,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1086161677}
     m_Modifications:
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 596450466}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -817,6 +888,7 @@ MonoBehaviour:
   StageTitle: {fileID: 597816664}
   LessonStage: {fileID: 1558480093}
   lessonContainer: {fileID: 1143009046}
+  LessonName: leccion_2
   LessonData: {fileID: 0}
 --- !u!1 &597816662
 GameObject:
@@ -960,6 +1032,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1086161677}
     m_Modifications:
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 737184852}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1081,6 +1181,7 @@ MonoBehaviour:
   StageTitle: {fileID: 597816664}
   LessonStage: {fileID: 1558480093}
   lessonContainer: {fileID: 1143009046}
+  LessonName: Leccion_4
   LessonData: {fileID: 0}
 --- !u!1 &801668040
 GameObject:
@@ -1579,7 +1680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1143009047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2262,7 +2363,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1713838489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 45388471}
+        m_TargetAssemblyTypeName: MainScript, Assembly-CSharp
+        m_MethodName: BeginGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1713838489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2518,6 +2631,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1086161677}
     m_Modifications:
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2051386458}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2639,6 +2780,7 @@ MonoBehaviour:
   StageTitle: {fileID: 597816664}
   LessonStage: {fileID: 1558480093}
   lessonContainer: {fileID: 1143009046}
+  LessonName: leccion_3
   LessonData: {fileID: 0}
 --- !u!1001 &4075775665680904308
 PrefabInstance:
@@ -2648,6 +2790,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1086161677}
     m_Modifications:
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4075775665680904311}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EnableWindow
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 360057922189120629, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2512707580234608324, guid: 401ef0e576d7e4bc9bf25c3b34424044, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2769,6 +2939,7 @@ MonoBehaviour:
   StageTitle: {fileID: 597816664}
   LessonStage: {fileID: 1558480093}
   lessonContainer: {fileID: 1143009046}
+  LessonName: leccion_1
   LessonData: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

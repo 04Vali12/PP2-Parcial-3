@@ -18,6 +18,8 @@ public class LevelContainer : MonoBehaviour
 
     [Header("External GameObject Configuration")]
     public GameObject lessonContainer;
+    public string LessonName;
+
 
     [Header("Lesson Data")]
     public ScriptableObject LessonData;
@@ -71,6 +73,7 @@ public class LevelContainer : MonoBehaviour
         {
             //Activa el objeto si este esta desactivado
             lessonContainer.SetActive(true);
+            MainScript.instance.SetSelectedLesson(LessonName);
         }
     }
 }

@@ -1,6 +1,5 @@
-
-   {
-    "Lesson": 1,
+  {
+    "lesson": 1,
     "leccionList": [
       {
         "ID": 1,
@@ -12,7 +11,7 @@
           "JavaScript",
           "C++"
         ],
-        "correctAnswer": 0
+        "CorrectAnswer": 0
       },
       {
         "ID": 2,
@@ -24,7 +23,7 @@
           "Un componente gráfico",
           "Un archivo de configuración"
         ],
-        "correctAnswer": 2
+        "CorrectAnswer": 2
       },
       {
         "ID": 3,
@@ -36,7 +35,7 @@
           "Una compañía de videojuegos",
           "Un sistema operativo"
         ],
-        "correctAnswer": 0
+        "CorrectAnswer": 0
       },
       {
         "ID": 4,
@@ -48,7 +47,7 @@
           "Un programa en C#",
           "Un modelo 3D"
         ],
-        "correctAnswer": 3
+        "CorrectAnswer": 3
       },
       {
         "ID": 5,
@@ -60,7 +59,7 @@
           "Reproducir sonidos",
           "Crear animaciones"
         ],
-        "correctAnswer": 2
+        "CorrectAnswer": 2
       }
     ]
   }

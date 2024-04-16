@@ -15,38 +15,27 @@ MonoBehaviour:
   Lesson: 0
   leccionList:
   - ID: 0
-    lessons: "\xBFQu\xE9 es una Variable?"
+    lessons: 
     options:
-    - ID
-    - Lista
-    - "S\xEDmbolo"
-    - Tipo
-    - Contenedor
+    - 
+    - 
+    - 
+    - 
+    - 
     CorrectAnswer: 0
-  - ID: 1
-    lessons: "\xBFQu\xE9 es una funci\xF3n?"
-    options:
-    - Una Serie de pasos para resolver un problema
-    - Una Variable
-    - "Una funci\xF3n"
-    - 'Un programa '
-    - Un Script
+  - ID: 0
+    lessons: 
+    options: []
     CorrectAnswer: 0
-  - ID: 2
-    lessons: "\xBFQu\xE9 es un programa?"
-    options:
-    - Una Serie de TV
-    - Una Variable
-    - "Una funci\xF3n"
-    - 'Un programa '
-    - Un Script
+  - ID: 0
+    lessons: 
+    options: []
     CorrectAnswer: 0
-  - ID: 3
-    lessons: "\xBFQu\xE9 es un programa?"
-    options:
-    - Una Serie de TV
-    - Una Variable
-    - "Una funci\xF3n"
-    - 'Un programa '
-    - Un Script
+  - ID: 0
+    lessons: 
+    options: []
+    CorrectAnswer: 0
+  - ID: 0
+    lessons: 
+    options: []
     CorrectAnswer: 0

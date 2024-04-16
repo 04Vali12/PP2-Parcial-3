@@ -10,7 +10,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     [Header("LevelData")]
-    public Subject Lesson;
+    public SubjectContainer subject;
 
     [Header("user interface")]
     public TMP_Text textQuestion;
@@ -50,11 +50,14 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        subject = SaveSystem.Instance.subject;
         //Se establece la cantidad de preguntas que hay en la leccion para
         //selecionarlas y actualizarlas
-        questionAmount = Lesson.leccionList.Count;
+        questionAmount = subject.leccionList.Count;
         // se le llama a la funcion para poder comprobar si ya se seleciono una opcion 
         LoadQuestion();
+
+        CheckPlayerState();
     }
 
     // Esta funcion carga la siguiente pregunta
@@ -63,7 +66,7 @@ public class LevelManager : MonoBehaviour
         //Asegura que la pregunta este dentro de los limites de la cantidad de preguntas asignadas
         if (currentQuestion < questionAmount)
         {
-            currentLesson = Lesson.leccionList[currentQuestion];
+            currentLesson = subject.leccionList[currentQuestion];
             question = currentLesson.lessons;
             CorrectAnswer = currentLesson.options[currentLesson.CorrectAnswer];
             textQuestion.text = question;
@@ -129,6 +132,7 @@ public class LevelManager : MonoBehaviour
             return false;
         }
     }
+
     private IEnumerator ShowResultAndLoadQuestion(bool isCorrect)
     {
         yield return new WaitForSeconds(2.5f);

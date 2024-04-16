@@ -20,11 +20,11 @@ public class SaveSystem : MonoBehaviour
         {
             Instance = this; // Asigna esta instancia como la instancia única
         }
+        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
     }
     private void Start()
     {
-        SaveToJSON("LeccionCompleta.json", data);
-        subject = LoadFromJSON<SubjectContainer>(PlayerPrefs.GetString("SelectedLesson"));
+        //SaveToJSON("LeccionCompleta.json", data);
     }
 
     /// <summary>
@@ -37,10 +37,10 @@ public class SaveSystem : MonoBehaviour
         if (_data != null)
         {
             // Convierte los datos a formato JSON
-            string JSONData = JsonUtility.ToJson(_data);
+            string JSONData = JsonUtility.ToJson(_data,true);
 
             // Verifica si los datos en formato JSON no están vacíos
-            if (!string.IsNullOrEmpty(JSONData))
+            if (JSONData.Length != 0)
             {
                 Debug.Log("JSON String: " + JSONData);
                 string fileName = _fileName + ".json"; // Agrega la extensión ".json" al nombre del archivo
@@ -70,19 +70,21 @@ public class SaveSystem : MonoBehaviour
     public T LoadFromJSON<T>(string _fileName) where T : new()
     {
         T data = new T(); // Crea una nueva instancia de los datos a cargar
-        string path = Path.Combine(Application.dataPath, "Resources/JSONS", _fileName + ".json");
+        string path = Path.Combine(Application.dataPath+ "/Resources/jsons/"+ _fileName + ".json");
+
+        string JSON_data = "";
 
         if (File.Exists(path))
         {
             // Lee los datos del archivo JSON
-            string JSONData = File.ReadAllText(path);
-            Debug.Log("JSON STRING: " + JSONData);
+             JSON_data = File.ReadAllText(path);
+            Debug.Log("JSON STRING: " + JSON_data);
 
             // Verifica si los datos en formato JSON no están vacíos
-            if (!string.IsNullOrEmpty(JSONData))
+            if (JSON_data.Length != 0)
             {
                 // Sobrescribe los datos con los datos cargados desde JSON
-                JsonUtility.FromJsonOverwrite(JSONData, data);
+                JsonUtility.FromJsonOverwrite(JSON_data, data);
             }
             else
             {
