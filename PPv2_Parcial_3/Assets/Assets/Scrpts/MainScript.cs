@@ -32,6 +32,6 @@ public class MainScript : MonoBehaviour
         }
     public void BeginGame2()
     {
-        SceneManager.LoadScene("dualipa");
+        SceneManager.LoadScene("PantallaInicio");
     }
 }
